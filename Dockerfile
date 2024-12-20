@@ -5,7 +5,7 @@ COPY . /app
 
 WORKDIR /app
 
-RUN npm install
+RUN apt update && npm install
 
 FROM node:22
 ENV NODE_ENV="production"
